@@ -1,0 +1,41 @@
+/*
+ * RCC_config.h
+ *
+ *  Created on: Jul 8, 2021
+ *      Author: ahmed hassan
+ */
+
+#ifndef RCC_CONFIG_H_
+#define RCC_CONFIG_H_
+
+/* Options = 1-RCC_u8_HSI_CLK
+ * 			 2-RCC_u8_HSEBYPASS_CLK
+ * 			 3-RCC_u8_HSECRYSTL_CLK
+ * 			 4-RCC_u8_PLL_HSI_CLK
+ * 			 5-RCC_u8_PLL_HSEBYPASS_CLK
+ * 			 6-RCC_u8_PLL_HSECRYSTL_CLK
+ * 			  */
+#define RCC_u8_CLK_SYS       	RCC_u8_HSECRYSTL_CLK
+
+/* Options = RCC_PLL_INPUT_CLK_X2
+			 RCC_PLL_INPUT_CLK_X3
+			 RCC_PLL_INPUT_CLK_X4
+			 RCC_PLL_INPUT_CLK_X5
+			 RCC_PLL_INPUT_CLK_X6
+			 RCC_PLL_INPUT_CLK_X7
+			 RCC_PLL_INPUT_CLK_X8
+			 RCC_PLL_INPUT_CLK_X9
+			 RCC_PLL_INPUT_CLK_X10
+			 RCC_PLL_INPUT_CLK_X11
+			 RCC_PLL_INPUT_CLK_X12
+			 RCC_PLL_INPUT_CLK_X13
+			 RCC_PLL_INPUT_CLK_X14
+			 RCC_PLL_INPUT_CLK_X15
+			 RCC_PLL_INPUT_CLK_X16
+ */
+#define RCC_u8_PLL_MUL_FACTOR	RCC_PLL_INPUT_CLK_X3
+
+/*define your input CLK IN MHZ*/
+#define RCC_u8_PLL_INPUT_CLK	8
+
+#endif /* RCC_CONFIG_H_ */
